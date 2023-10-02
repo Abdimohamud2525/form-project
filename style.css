@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:wght@100;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #506D84;
+}
+
+.form {
+    background-color: #889EAF;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+    outline: none;
+    gap: 20px;
+    box-shadow: 0px 2px 10px rgba(10, 5, 20, 0.8)
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.form-controll input {
+    width: 400px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #506D84;
+}
+
+.form-controll label {
+    padding: 10 15px;
+}
+
+.form-controll i.fa-check {
+    position: absolute;
+    margin-top: -30px;
+    right: 445px;
+    color: green;
+    visibility: hidden;
+}
+
+.form-controll i.fa-close {
+    position: absolute;
+    margin-top: -30px;
+    right: 445px;
+    color: red;
+    visibility: hidden;
+}
+
+.form-controll small {
+    color: red;
+    visibility: hidden;
+}
+
+.btn {
+    margin-left: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #889EAF;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #889EAF;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 47, 255);
+    font-size: 20px;
+}
+
+.form-controll.error input {
+    border: 1px solid red;
+}
+
+.form-controll.succes input {
+    border: 1px solid green
+}
+
+@media (max-width: 600px) {
+    .form-control i.fa-check {
+        right: 95px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>form validition</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form" id="form">
+            <h1>Register</h1>
+            <div class="form-controll ">
+                <label for="name">First Name</label>
+                <input class="firstName" id="firstName" type="text" placeholder="Enter Your first Name">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>error message</small>
+            </div>
+
+            <div class="form-controll">
+                <label for="LastName">Last Name</label>
+                <input class="lastName" id="lastName" type="text" placeholder="enter Your lastName">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>error message</small>
+            </div>
+
+            <div class="form-controll">
+                <label for="name">Email</label>
+                <input class="email" id="email" type="email" placeholder="enter Your Email">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>error message</small>
+            </div>
+
+
+            <div class="form-controll">
+                <label for="name">password</label>
+                <input class="password" id="password" type="password" placeholder="enter Your password">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>error message</small>
+            </div>
+
+            <div class="form-controll">
+                <label for="name">confinPassword</label>
+                <input class="confinPassword" id="confinPassword" type="password" placeholder="confin Your Password">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>error message</small>
+            </div>
+            <button class="btn" id="btn">submit</button>
+
+            <span>Do you have an account? <a href="/login">/login</a> </span>
+
+        </form>
+    </div>
+
+    <script src="/form-project/main.js"></script>
+</body>
+
+</html>
